@@ -52,4 +52,4 @@ jobs:
           app-name: 'ivan-appservice-lab'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8CCCB8532C094F05BAAB7C33C57D24DD }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0E66C5B8DC4046F5A8770FD0A9063D74 }}

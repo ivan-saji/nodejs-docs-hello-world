@@ -62,6 +62,16 @@ app.get('/api', function (req, res) {
     return res.send("Fabrikam Bank API");
 })
   
+// Adding a health check endpoint to monitor the health of the application. This is important for ensuring that the application is running correctly and can help with automatic recovery in case of failures.
+app.get('/health', (req, res) => {
+    res.status(200).json({
+        status: "Healthy",
+        application: "Fabrikam Bank API",
+        version: pkg.version,
+        timestamp: new Date().toISOString()
+    });
+});
+
 // ----------------------------------------------
   // Create an account
 router.post('/accounts', (req, res) => {

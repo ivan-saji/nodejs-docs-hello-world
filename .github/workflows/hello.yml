@@ -19,6 +19,6 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        
-      - name: Say hello
-        run: echo "Hello from GitHub Actions!"
+
+      - name: Run tests
+        run: npm test

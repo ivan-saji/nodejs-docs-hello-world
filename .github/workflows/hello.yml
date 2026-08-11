@@ -17,5 +17,8 @@ jobs:
         with:
           node-version: '24'
 
+      - name: Install dependencies
+        run: npm install
+        
       - name: Say hello
         run: echo "Hello from GitHub Actions!"

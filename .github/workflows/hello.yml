@@ -3,6 +3,10 @@ name: Github Action to deploy a Node.js app to azure web app
 on:
   push:
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   deploy:
     runs-on: ubuntu-latest

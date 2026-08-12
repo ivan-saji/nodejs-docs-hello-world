@@ -60,11 +60,11 @@ jobs:
         with:
           name: nodejs-app
           path: ./artifact
-          
+
       - name: Deploy to Azure Web App - Staging
         uses: azure/webapps-deploy@v3
         with:
           app-name: ivan-appservice-lab
-          slot-name: staging
+          slot-name: ivan-appservice-lab-staging
           package: ./artifact
 

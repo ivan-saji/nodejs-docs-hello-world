@@ -16,6 +16,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Azure login
+        uses: azure/login@v2
+        with:
+          client-id: 9962b80c-6404-4d93-87d9-f9f7d01478b8
+          tenant-id: 8316e695-7e94-4716-92c4-836cee1dc7ce
+          subscription-id: 86325090-0264-4868-9a75-0df86c5f215f
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:

@@ -1,10 +1,10 @@
-name: My First GitHub Action
+name: Github Action to deploy a Node.js app to azure web app
 
 on:
   push:
 
 jobs:
-  hello:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,3 +22,13 @@ jobs:
 
       - name: Run lint
         run: npm run lint
+
+      - name: Create deployment artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: nodejs-app
+          path: |
+            .
+            !.git
+            !.github
+            !node_modules

@@ -16,6 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+        #Add Azure login
       - name: Azure login
         uses: azure/login@v2
         with:
@@ -45,4 +46,3 @@ jobs:
             !.github
             !node_modules
 
-            

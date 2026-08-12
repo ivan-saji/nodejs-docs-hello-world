@@ -29,6 +29,7 @@ jobs:
           name: nodejs-app
           path: |
             .
+            #Following will be skipped from the artifact
             !.git
             !.github
             !node_modules

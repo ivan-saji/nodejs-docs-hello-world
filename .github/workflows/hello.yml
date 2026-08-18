@@ -20,7 +20,7 @@ jobs:
       - name: Azure login
         uses: azure/login@v2
         with:
-          client-id: c4a10afb-cc4f-4c81-a101-3bd632511518
+          client-id: b01a8043-5bbd-43b5-bed8-9428e4de113e
           tenant-id: 8316e695-7e94-4716-92c4-836cee1dc7ce
           subscription-id: 86325090-0264-4868-9a75-0df86c5f215f
 
@@ -66,7 +66,6 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: ivan-appservice-lab
-          slot-name: staging
           package: ./artifact
 
 # Test 4

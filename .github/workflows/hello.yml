@@ -66,6 +66,6 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: ivan-appservice-lab
-          slot-name: ivan-appservice-lab-staging
+          slot-name: staging
           package: ./artifact
 

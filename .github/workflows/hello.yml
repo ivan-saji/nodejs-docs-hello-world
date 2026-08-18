@@ -62,7 +62,7 @@ jobs:
           path: ./artifact
       
           #Deployment code
-      - name: Deploy to Azure Web App - Staging
+      - name: Deploy to Azure Web App - Prod
         uses: azure/webapps-deploy@v3
         with:
           app-name: ivan-appservice-lab
